@@ -1,0 +1,14 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import { useTodos } from './context/todosContext.js'
+import TodosContextProvider from "./context/TodosContextProvider.jsx"
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <TodosContextProvider >
+      <App />
+    </TodosContextProvider>
+
+  </StrictMode>,
+)
