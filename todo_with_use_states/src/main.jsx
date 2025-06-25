@@ -8,6 +8,3 @@ createRoot(document.getElementById('root1')).render(
   </StrictMode>,
 )
 
-createRoot(document.getElementById('root2')).render(
-  <App/>
-)
